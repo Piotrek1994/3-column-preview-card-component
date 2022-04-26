@@ -28,15 +28,13 @@ body {
 
 .column {
 	padding: 69px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: space-between;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
 }
 
 .first-card {
 	background-color: hsl(31, 77%, 52%);
-    
 }
 
 .second-card {
@@ -46,18 +44,21 @@ body {
 	background-color: hsl(179, 100%, 13%);
 }
 
-.first-head {
-	font-size: 40px;
+img {
+    width: 80px;
+}
+
+
+.first-head, .second-head, .third-head {
+	font-size: 42px;
 	text-transform: uppercase;
 	font-family: 'Big Shoulders Display', cursive;
 	font-weight: 700;
 	color: hsl(0, 0%, 95%);
-	padding: 20px 0;
-    padding-top: 0;
-    
+	padding: 35px 0;
 }
 
-.first-text {
+.first-text, .second-text, .third-text {
 	font-size: 15px;
 	font-family: 'Lexend Deca', sans-serif;
 	color: hsla(0, 0%, 100%, 0.75);
@@ -65,19 +66,25 @@ body {
 	line-height: 27px;
 }
 
-.first-card_button {
-
+.first-card_button, .second-card_button, .third-card_button {
+	position: absolute;
 	width: 170px;
 	height: 50px;
 	border-radius: 50px;
 	border: none;
-    bottom: 0;
-    
-
+	color: hsl(31, 77%, 52%);
+	font-size: 17px;
+	font-family: 'Lexend Deca', sans-serif;
+	cursor: pointer;
+	bottom: 69px;
 }
 
-
-
+.second-card_button {
+    color: hsl(184, 100%, 22%);
+}
+.third-card_button {
+    color: hsl(179, 100%, 13%);
+}
 
 .attribution {
 	position: absolute;
