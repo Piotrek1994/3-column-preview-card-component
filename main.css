@@ -121,7 +121,7 @@ img {
 	}
 
 	img {
-		width: 30px;
+		width: 50px;
 	}
 
 	.attribution {
@@ -133,4 +133,17 @@ img {
 	.third-head {
 		padding: 5px 0;
 	}
+
+    .third-card_button {
+        padding: 0;
+        bottom: 30px;
+    }
+    .second-card_button {
+        padding: 0;
+        bottom: 380px;;
+    }
+    .first-card_button {
+        padding: 0;
+        bottom: 730px;
+    }
 }
