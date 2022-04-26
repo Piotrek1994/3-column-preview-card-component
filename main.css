@@ -82,15 +82,15 @@ img {
 	font-family: 'Lexend Deca', sans-serif;
 	cursor: pointer;
 	bottom: 69px;
-    transition: background-color .3s, color .3s, border .3s ;
+	transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
 .first-card_button:hover,
 .second-card_button:hover,
 .third-card_button:hover {
 	background-color: transparent;
-    color: hsla(0, 0%, 100%, 0.75);
-    border: 3px solid hsla(0, 0%, 100%, 0.75);
+	color: hsla(0, 0%, 100%, 0.75);
+	border: 3px solid hsla(0, 0%, 100%, 0.75);
 }
 
 .second-card_button {
@@ -105,4 +105,32 @@ img {
 	left: 50%;
 	transform: translate(-50%, 0);
 	bottom: 0;
+}
+
+@media (max-width: 375px) {
+	.card {
+		display: flex;
+		flex-direction: column;
+		height: 1050px;
+		width: 320px;
+	}
+
+	.column {
+		height: 350px;
+		padding: 30px;
+	}
+
+	img {
+		width: 30px;
+	}
+
+	.attribution {
+		display: none;
+	}
+
+	.first-head,
+	.second-head,
+	.third-head {
+		padding: 5px 0;
+	}
 }
