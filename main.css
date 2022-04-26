@@ -45,11 +45,12 @@ body {
 }
 
 img {
-    width: 80px;
+	width: 80px;
 }
 
-
-.first-head, .second-head, .third-head {
+.first-head,
+.second-head,
+.third-head {
 	font-size: 42px;
 	text-transform: uppercase;
 	font-family: 'Big Shoulders Display', cursive;
@@ -58,7 +59,9 @@ img {
 	padding: 35px 0;
 }
 
-.first-text, .second-text, .third-text {
+.first-text,
+.second-text,
+.third-text {
 	font-size: 15px;
 	font-family: 'Lexend Deca', sans-serif;
 	color: hsla(0, 0%, 100%, 0.75);
@@ -66,7 +69,9 @@ img {
 	line-height: 27px;
 }
 
-.first-card_button, .second-card_button, .third-card_button {
+.first-card_button,
+.second-card_button,
+.third-card_button {
 	position: absolute;
 	width: 170px;
 	height: 50px;
@@ -77,13 +82,22 @@ img {
 	font-family: 'Lexend Deca', sans-serif;
 	cursor: pointer;
 	bottom: 69px;
+    transition: background-color .3s, color .3s, border .3s ;
+}
+
+.first-card_button:hover,
+.second-card_button:hover,
+.third-card_button:hover {
+	background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 3px solid hsla(0, 0%, 100%, 0.75);
 }
 
 .second-card_button {
-    color: hsl(184, 100%, 22%);
+	color: hsl(184, 100%, 22%);
 }
 .third-card_button {
-    color: hsl(179, 100%, 13%);
+	color: hsl(179, 100%, 13%);
 }
 
 .attribution {
